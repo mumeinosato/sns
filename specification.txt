@@ -15,5 +15,5 @@ Node.js
         Vite         
 
 
-npm install  express --save
+pnpm start
 sudo /etc/init.d/postgresql restart; sudo service redis-server start                   
