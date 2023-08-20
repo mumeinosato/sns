@@ -21,8 +21,16 @@ module.exports = async function (fastify, opts) {
 
   // This loads all plugins defined in routes
   // define your routes in one of these
-  fastify.register(AutoLoad, {
-    dir: path.join(__dirname, 'routes'),
-    options: Object.assign({}, opts)
-  })
+  //fastify.register(AutoLoad, {
+  //  dir: path.join(__dirname, 'routes'),
+  //  options: Object.assign({}, opts)
+  //})
+  fastify.register(require('point-of-view'), {
+    engine: {
+       ejs: require('ejs')
+    }
+   })
+   fastify.get('/', (req, reply) => {
+    reply.view('/views/index.ejs', { name: 'Symfoware' })
+   })
 }
