@@ -26,18 +26,11 @@ module.exports = async function (fastify, opts) {
     dir: path.join(__dirname, 'routes'),
     options: Object.assign({}, opts)
   })
-
-  const client = new KintoneRestAPIClient({
-    baseUrl: 'https://｛subdomain｝.cybozu.com',
-    auth: {
-      apiToken: '{api_token}'
-    }
-  });
   
   fastify.post('/getData', async (request, reply) => {
-    // requestでVue側からオブジェクトを受け取る
-    const data = await client.record.getRecord({app: request.body.app, id: request.body.id});
-    console.log(data);
-    reply.send({message: JSON.stringify(data)});
+    // ここに外部APIへのリクエストを書く
+  
+    // 引数のreplyを使ってWeb側へデータを渡す
+    reply.send({message: 'Hello World!'});
   });
 }
