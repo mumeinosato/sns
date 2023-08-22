@@ -2,7 +2,6 @@
 
 const path = require('path')
 const AutoLoad = require('@fastify/autoload')
-const {KintoneRestAPIClient} = require('@kintone/rest-api-client');
 
 // Pass --options via CLI arguments in command to enable these options.
 module.exports.options = {}
@@ -26,7 +25,7 @@ module.exports = async function (fastify, opts) {
     dir: path.join(__dirname, 'routes'),
     options: Object.assign({}, opts)
   })
-  
+
   fastify.post('/getData', async (request, reply) => {
     // ここに外部APIへのリクエストを書く
   
