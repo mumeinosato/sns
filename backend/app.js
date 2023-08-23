@@ -26,6 +26,8 @@ module.exports = async function (fastify, opts) {
     options: Object.assign({}, opts)
   })
 
+  fastify.register(require('@fastify/cors'));
+
   fastify.post('/getData', async (request, reply) => {
     // ここに外部APIへのリクエストを書く
   

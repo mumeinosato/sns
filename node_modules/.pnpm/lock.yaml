@@ -13,6 +13,9 @@ importers:
       '@fastify/autoload':
         specifier: ^5.0.0
         version: 5.0.0
+      '@fastify/cors':
+        specifier: ^8.3.0
+        version: 8.3.0
       '@fastify/sensible':
         specifier: ^5.0.0
         version: 5.0.0
@@ -1346,6 +1349,13 @@ packages:
     resolution: {integrity: sha512-hayrT8U3cUxQDvQSINGb5+TX9n9KPh9wSAB2LxPFXiKPFzfu+G1+lZ2Uh26Ej9trzq9jZlsYbx4xUzEeFVkJZw==}
     dependencies:
       pkg-up: 3.1.0
+    dev: false
+
+  /@fastify/cors@8.3.0:
+    resolution: {integrity: sha512-oj9xkka2Tg0MrwuKhsSUumcAkfp2YCnKxmFEusi01pjk1YrdDsuSYTHXEelWNW+ilSy/ApZq0c2SvhKrLX0H1g==}
+    dependencies:
+      fastify-plugin: 4.0.0
+      mnemonist: 0.39.5
     dev: false
 
   /@fastify/deepmerge@1.3.0:
@@ -5398,6 +5408,12 @@ packages:
     hasBin: true
     dev: true
 
+  /mnemonist@0.39.5:
+    resolution: {integrity: sha512-FPUtkhtJ0efmEFGpU14x7jGbTB+s18LrzRL2KgoWz9YvcY3cPomz8tih01GbHwnGk/OmkOKfqd/RAQoc8Lm7DQ==}
+    dependencies:
+      obliterator: 2.0.4
+    dev: false
+
   /module-alias@2.2.3:
     resolution: {integrity: sha512-23g5BFj4zdQL/b6tor7Ji+QY4pEfNH784BMslY9Qb0UnJWRAt+lQGLYmRaM0KDBwIG23ffEBELhZDP2rhi9f/Q==}
     dev: true
@@ -5597,6 +5613,10 @@ packages:
       has-symbols: 1.0.3
       object-keys: 1.1.1
     dev: true
+
+  /obliterator@2.0.4:
+    resolution: {integrity: sha512-lgHwxlxV1qIg1Eap7LgIeoBWIMFibOjbrYPIPJZcI1mmGAI2m3lNYpK12Y+GBdPQ0U1hRwSord7GIaawz962qQ==}
+    dev: false
 
   /obuf@1.1.2:
     resolution: {integrity: sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==}
