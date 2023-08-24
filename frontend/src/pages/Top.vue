@@ -14,7 +14,7 @@
   }
   </script>
   
-  <style scoped>
+<style scoped>
   main {
     height: calc(100vh - 152px);
     padding: 3% 0;
@@ -26,4 +26,4 @@
   h2 {
     margin: 0;
   }
-  </style>
+</style>

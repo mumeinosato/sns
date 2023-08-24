@@ -18,7 +18,7 @@
   }
   </script>
   
-  <style scoped>
+<style scoped>
   header {
     padding: 1.8em 5%;
     background: #778899;
@@ -38,4 +38,4 @@
     margin: 0;
     color: #fff;
   }
-  </style>
+</style>
